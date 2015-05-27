@@ -43,13 +43,15 @@ namespace Assets.Code.VoxelEngine.Rendering
             {
                 Vector3.left + Vector3.up,
                 Vector3.right + Vector3.up,
-                Vector3.right + Vector3.down
+                Vector3.right + Vector3.down,
+                Vector3.left + Vector3.down
             };
 
 
             mesh.triangles = new[]
             {
-                0, 1, 2
+                0, 1, 2,
+                2, 3, 0
             };
 
             return mesh;
